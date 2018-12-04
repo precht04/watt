@@ -1,0 +1,53 @@
+body{
+    background-color: #fafafa;
+}
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+#side{
+    background-image: url("/img/1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Bebas Neue Bold", sans-serif;
+}
+
+.wattbreadcrumb{
+    background-color: transparent;
+    font-size: .9rem;
+    margin-bottom: 0;
+    display: flex;
+    padding: 0;
+    height: 57px;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.wattbreadcrumb .breadcrumb-item{
+    float: none;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    padding: 1.2rem 0;
+    background-color: #fff;
+    color: #ff9800  ;
+    border-bottom: 1px solid #eceeef;
+    text-indent: 30px;
+}
+
+.wattbreadcrumb .breadcrumb-item:not(:last-child)::before{
+    border-color: transparent;
+    border-left-color: #eceeef;
+    border-width: 29px;
+    margin-top: -29px;
+    z-index: 100;
+}
+
+.wattbreadcrumb .breadcrumb-item:not(:last-child)::after, .wattbreadcrumb .breadcrumb-item:not(:last-child)::before{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+}

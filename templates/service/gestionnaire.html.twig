@@ -1,0 +1,115 @@
+{% extends 'servicebase.html.twig' %}
+
+{% block title %}  {{ parent() }} - Gestionnaire {% endblock %}
+{% block body %}
+
+    {#Parallax Picture#}
+    <div class="parallax-container" xmlns="http://www.w3.org/1999/html">
+        <div class="parallax"><img src="{{ asset('img/bg_gestionnaire.jpg') }}"></div>
+    </div>
+
+    {# Breadcrumb bar #}
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="{{ path('accueil') }}" class="breadcrumb back">Accueil</a>
+                    <a  class="disabled breadcrumb">Gestionnaires et Agences Immobilières</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4 class="titre center-align">
+            <span class=" orange-text">
+                GESTIONNAIRES ET AGENCES IMMOBILI&Egrave;RES
+            </span>
+        </h4>
+
+        <p class="center-align">
+            WATTANDOH est une entreprise de coursier professionnel qui travaille avec les nouvelles technologies d’information et de communication afin de trouver une solution optimale aux problèmes que rencontres les  propriétaires, gestionnaires et agence immobilière à la recherche de locataire.
+        </p>
+    </div>
+    {# Description du contenu #}
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">1</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Qui nous consid&eacute;rons comme Gestionnaire?</h4>
+                        <p>
+                            Toute personne qui encaisse les locataires chaque mois, ou agences immobili&egrave;res.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l7 xl7 hide-on-med-and-down"></div>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col l7 xl7 hide-on-med-and-down">
+
+            </div>
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">2</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Comment &ccedil;a fonctionne ?</h4>
+                        <p>
+                            Lorsque vous êtes dans le besoin de locataire pour votre logement, quel que soit le type de bien et de sa valeur ; quel que soit sa situation géographique ici à Abidjan  utilisez  notre application mobile pour avoir le locataire de votre choix.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row d-flex">
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">3</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">QUELS SONT LES AVANTAGES?</h4>
+
+                        <p>
+                            <h6>Rapidit&eacute;</h6>
+                            <p>Grace à notre base de données nous vous présentons immédiatement des locataires prêts à visiter votre logement.
+                            En effet  Lorsque  vous utilisez notre application pour la recherche d’un locataire vous l’aurez  ce même jour  il suffit de bien renseigné votre demande.
+                            </p>
+
+                            <h6>Qualité du service</h6>
+                            <p>Donnez-nous votre exigence clientèle et nous vous trouvons le locataire idéal.
+                                D’abord Remplissez librement votre formulaire selon votre gout à savoir : le montant du loyer, vos cautions souhaitées etc. Ensuite nous vous apportons un locataire solvable accompagné par un agent professionnel.
+                            </p>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l7 xl7 hide-on-med-and-down"></div>
+        </div>
+    </div>
+    <div class="container-fluid " id="ready">
+        <br/>
+        <div class="center-align">
+            <br/>
+            <h3> Vous cherchez des locataires? <br/>Inscrivez vous en quelques secondes</h3>
+            <h3></h3>
+            <br/>
+            <a href="{{ path('newgestionnaire') }}" class="btn btn-large waves-effect waves-light orange pulse" style="width: 30%">D&eacute;venir gestionnaire</a>
+            <br/><span>c'est rapide!</span>
+            <br/><br/>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends 'servicebase.html.twig' %}
+
+{% block title %} {{ parent() }} - Prestataire {% endblock %}
+{% block body %}
+
+    {#Paralax picture#}
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/1.jpg"></div>
+    </div>
+
+    {# Breadcrumb bar #}
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="{{ path('accueil') }}" class="breadcrumb back">Accueil</a>
+                    <a  class="disabled breadcrumb">Prestataires</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    {#Titre avec barre inférieur#}
+        <h4 class="titre center-align">
+            <span class=" orange-text">
+                PRESTATAIRES
+            </span>
+        </h4>
+        <p class="center-align">
+            Travaillez avec notre application mobile et gagner plus de 225 000F CFA /MOIS.
+        </p>
+    </div>
+
+    {# Description du contenu #}
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">1</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Qui peut &ecirc;tre Prestataire</h4>
+                        <p>
+                            Que vous soyez homme ou femme,vous devez &ecirc;tre capable d'utiliser les derni&egrave;res technologies et avoir un BEPC au minimum et
+                            Une fois le formulaire d'inscription rempli, nous procederons &agrave; la v&eacute;rification physique des &eacute; que vous avez mentionn&eacute; lors de l'inscription en ligne
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l7 xl7 hide-on-med-and-down"></div>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col l7 xl7 hide-on-med-and-down">
+
+            </div>
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">2</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Comment &ccedil;a fonctionne ?</h4>
+                        <p>
+                            A l’aide de notre application nous vous permettons de recevoir en temps réel la requête de nos partenaires (gestionnaires ,propri&eacute;taires et agences immobili&egrave;res) et des locataires
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row d-flex">
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">3</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Quel sera votre r&ocirc;le?</h4>
+                        <h6>Confirmer les r&eacute;qu&ecirc;tes des partenaires</h6>
+                        <p>Lorsqu’ un partenaire nous sollicite. WATTANDOH vous permet de recevoir la requête la plus proche de vous sur votre application. Ainsi vous pouvez le rencontrer puis vérifier si  la requête  est à considérer  ou pas.
+                            En claire vous serez appelé à confirmer les requêtes des partenaires propriétaires, gestionnaires et agences immobilières.
+                        </p>
+                        <h6>Accompagnez le locataire dans sa quête</h6>
+                        <p>Lorsqu’ un locataire nous sollicite pour lui trouver un logement,
+                            Wattandoh vous permet de recevoir sa requête sur votre application ainsi vous prenez rendez-vous avec
+                            lui et vous l'accompagnez pour effectuer sa visite.<br/>
+                            Si le client visite et est satisfait du logement, vous récupérez pour le compte de WATTANDOH  la commission qui lui est du.
+                            Partout où vous être à Abidjan il y a des personnes qui sont en quête de logements. Votre rôle exact est de les accompagner de manière professionnelle et sécurisée de début jusqu’à la fin du processus.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l7 xl7 hide-on-med-and-down"></div>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col l7 xl7 hide-on-med-and-down">
+
+            </div>
+            <div class="col s12 m12 l7 xl7">
+                <div class="d-flex">
+                    <span class="number">4</span>
+                    <div class="contenu_number">
+                        <h4 class="subtitre">Quels sont les avantages?</h4>
+                        <h6>Flexibilité du travail</h6>
+                        <p>
+                            Avec WATTANDOH dispose absolument de votre temps, travaillez quand vous voulez, ou vous voulez et comme vous le souhaitez
+                        </p>
+
+                        <h6>Rapidité d'exécution</h6>
+                        <p>
+                            Grâce à notre base de données nous  vous  connectons à plusieurs  personnes
+                            qui désirent  un logement ou un locataire.
+                        </p>
+
+                        <h6>Gains et Rémunérations</h6>
+                        <p>
+                            Pour chaque prestation effectuée avec succès percevez 30% du prix du loyer.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid " id="ready">
+        <br/>
+        <div class="center-align">
+            <br/>
+            <h3> Vous êtes partant pour rejoindre nos prestaires ?<br/>Inscrivez vous en quelques secondes</h3>
+            <h3></h3>
+            <br/>
+            <a href="{{ path('newprestataire') }}" class="btn btn-large waves-effect waves-light orange pulse" style="width: 30%">D&eacute;venir prestataire</a>
+            <p>c'est rapide!</p>
+            <br/><br/>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}

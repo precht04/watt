@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+
+        <title>{% block title %}Wattandoh {% endblock %}</title>
+        {% block stylesheets %}
+            <!--Import Google Icon Font-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <!--Import materialize.css-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            {#Importation de police perso#}
+            <link href="https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue-Bold.css" rel="stylesheet">
+            <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            {% include 'inc/menu.html.twig' %}
+        </header>
+        <main>
+            {% block body %}
+                {# Contenu destiné au page enfant #}
+            {% endblock %}
+        </main>
+            {% include 'inc/footer.html.twig' %}
+
+        {% block javascripts %}
+            <!--JavaScript at end of body for optimized loading-->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script src="{{ asset('js/custom.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

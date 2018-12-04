@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the PDF</title>
+    <style>
+        .titre{
+            font-weight: bold;
+        }
+        .valeur{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+           <td colspan="2"><img src="../public/img/wattlogo_1.png"/></td>
+            <td><span>Louez et faites louer votre logement en quelques clics!</span></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <hr/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div style="border: 1px solid #000000;padding: 2px;text-align: center">
+                    <h2>FICHE D'INSCRIPTION PRESTATAIRE</h2>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <fieldset>
+                    <legend>Informations Personnelles</legend>
+                    <span class="titre">Code Prestataire : </span><span class="valeur">{{ codeprest }}</span><br/>
+                    <span class="titre">Nom : </span><span class="valeur">{{ nomprest }}</span><br/>
+                    <span class="titre">Prénoms : </span><span class="valeur">{{ prenomprest }}</span><br/>
+                    <span class="titre">Téléphone : </span><span class="valeur">{{ telprest }}</span><br/>
+                    <span class="titre">Email : </span><span class="valeur">{{ emailprest }}</span><br/>
+                    <span class="titre">Domicile : </span><span class="valeur">{{ localisation.localisation }}</span>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <fieldset>
+                    <legend>Autres Informations</legend>
+                    <span class="titre">Nature de la pièce : </span><span class="valeur">{{ naturepiece.nomPiece }}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="titre">N<sup>o</sup> Pièce : </span><span class="valeur">{{ numeropiece }}</span><br/>
+                    <span class="titre">Niveau d'étude : </span><span class="valeur">{{ niveau.niveau }}</span>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% extends 'register.html.twig' %}
+
+{% block title %}  {{ parent() }} - Inscription Prestataire {% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+    <div class="row no-gutters">
+        <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7">
+            <ol class="breadcrumb wattbreadcrumb text-center">
+                <li><a href="{{ path('accueil') }}">
+                        <img src="{{ asset('img/wattlogo_1.png') }}" height="50px"/>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><h4> INSCRIPTION</h4></li>
+            </ol>
+                <div class="row no-gutters">
+                   <div style="width: 100%">
+                       {% for message in app.flashes('warning') %}
+                            <div class="alert alert-danger" role="alert">
+                                <p>{{ message }}</p>
+
+                            </div>
+                       {% endfor %}
+                   </div>
+                    <div class="col-md-4 col-lg-9 mx-auto">
+                        <div class="p-3">
+                            <div>
+                                <div>
+                                    <h3>Créer un compte prestataire</h3><hr/>
+                                </div>
+                                {{ form_start(form) }}
+                                {{ form_widget(form) }}
+                                {{ form_end(form) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <div class="hidden-md-down col-lg-5 col-xl-5" id="side">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-lg-8 mx-auto">
+                    <div class="p-4">
+                        <div class="container">
+                            Hello
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}
